@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeotap Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>ZEOTAP SHEET</h1>
+    </header>
+
+    <!-- Toolbar Section -->
+    <div id="toolbar">
+        <button onclick="applyBold()">Bold</button>
+        <button onclick="applyItalic()">Italic</button>
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="clearData()">Clear</button>
+        <button onclick="saveSheet()">Save</button>
+        <button onclick="loadSheet()">Load</button>
+        <button onclick="generateChart()">Generate Chart</button>
+    </div>
+
+    <!-- Spreadsheet Section -->
+    <div id="spreadsheet">
+        <table id="sheet">
+            <thead>
+                <tr>
+                    <!-- Column headers will be dynamically added here -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Formula Bar Section -->
+    <div id="formula-bar">
+        <input type="text" id="formulaInput" placeholder="Enter formula or data">
+        <button onclick="executeFormula()">Execute</button>
+    </div>
+
+    <!-- Chart Section -->
+    <div id="chart-container">
+        <canvas id="dataChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
